@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TUTRO — Download</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#11151A;
+    --card:#171C23;
+    --line:#262E38;
+    --ink:#EDEFF2;
+    --muted:#8A96A3;
+    --accent:#38D9A9;
+    --accent-dim:#1F5E4E;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(circle at 20% 0%, rgba(56,217,169,0.08), transparent 45%),
+      var(--bg);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:32px 16px;
+  }
+  .card{
+    width:100%;
+    max-width:420px;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:20px;
+    padding:40px 32px 32px;
+    text-align:center;
+  }
+  .icon{
+    width:72px;height:72px;
+    margin:0 auto 22px;
+    border-radius:18px;
+    background:linear-gradient(155deg, var(--accent), var(--accent-dim));
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:700;
+    font-size:30px;
+    color:#0B1512;
+    box-shadow:0 8px 24px rgba(56,217,169,0.25);
+  }
+  h1{
+    font-family:'Space Grotesk',sans-serif;
+    font-weight:700;
+    font-size:26px;
+    margin:0 0 6px;
+    letter-spacing:-0.01em;
+  }
+  .tagline{
+    color:var(--muted);
+    font-size:14.5px;
+    margin:0 0 28px;
+    line-height:1.5;
+  }
+  .download-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    width:100%;
+    background:var(--accent);
+    color:#0B1512;
+    font-family:'Inter',sans-serif;
+    font-weight:600;
+    font-size:15.5px;
+    padding:15px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow:0 6px 18px rgba(56,217,169,0.25);
+  }
+  .download-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 24px rgba(56,217,169,0.35);
+  }
+  .download-btn:active{ transform:translateY(0); }
+  .meta{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin-top:18px;
+    font-size:12.5px;
+    color:var(--muted);
+  }
+  .meta span{ display:flex; align-items:center; gap:6px; }
+  .dot{ width:5px;height:5px;border-radius:50%; background:var(--muted); }
+  .note{
+    margin-top:26px;
+    padding-top:20px;
+    border-top:1px solid var(--line);
+    font-size:12.5px;
+    color:var(--muted);
+    line-height:1.6;
+  }
+  .note a{ color:var(--accent); text-decoration:none; }
+  .note a:hover{ text-decoration:underline; }
+</style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="icon">T</div>
+    <h1>TUTRO</h1>
+    <p class="tagline">Get the latest version of the app,<br>straight to your device.</p>
+
+    <a class="download-btn" href="https://github.com/ahmadaminch07-stack/TUTRO/releases/latest/download/TUTRO.apk" download>
+      ⬇ Download for Android
+    </a>
+
+    <div class="meta">
+      <span>Free</span>
+      <span class="dot"></span>
+      <span>Android APK</span>
+      <span class="dot"></span>
+      <span>Auto-updates to latest</span>
+    </div>
+
+    <div class="note">
+      After downloading, open the file and allow "install from unknown sources" if prompted.<br>
+      Having trouble? <a href="https://github.com/ahmadaminch07-stack/TUTRO/releases" target="_blank">See all versions on GitHub</a>
+    </div>
+  </div>
+
+</body>
+</html>
